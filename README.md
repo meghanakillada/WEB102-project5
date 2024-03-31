@@ -2,7 +2,7 @@
 
 Submitted by: **Maggie Killada**
 
-This web app: **insert description**
+This web app: **This website allows you to see data about the characters from The Amazing Spider-Man Series. It lists the number of series, comics, stories, and events they were in.**
 
 Time spent: **5** hours spent in total
 
