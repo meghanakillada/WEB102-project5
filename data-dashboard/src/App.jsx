@@ -67,10 +67,26 @@ function App() {
   return (
     <div className="whole-page">
       <h2>Characters from The Amazing Spider-Man (1963-1998)</h2>
-      <label>Highest Comics: {highestComicsCount} </label>
-      <label>Highest Series: {highestSeriesCount} </label>
-      <label>Lowest Stories: {lowestStoriesCount} </label>
-      <br></br>
+      <div class="flex-container">
+        <div class="card">
+          <div class="container">
+            <h4><b>Highest Comics</b></h4>
+            <p>{highestComicsCount}</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="container">
+            <h4><b>Highest Series</b></h4>
+            <p>{highestSeriesCount}</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="container">
+            <h4><b>Lowest Stories</b></h4>
+            <p>{lowestStoriesCount}</p>
+          </div>
+        </div>
+      </div>
       <input
         type="text"
         placeholder="Search..."
@@ -78,7 +94,17 @@ function App() {
       />
     <button type="button" onClick={filterComics}>Comics Greater than 500</button>
     <button type="button" onClick={filterSeries}>Series Greater than 100</button>
-      <ul>
+    <br></br>
+    <br></br>
+    <table>
+    <tr>
+      <th></th>
+      <th>Character Name</th>
+      <th>Total Comics</th>
+      <th>Total Series</th>
+      <th>Total Stories</th>
+      <th>Total Events</th>
+    </tr>
       {filteredResults.length > 0
         ? filteredResults && Object.entries(filteredResults).map(([character]) => 
           <CharacterInfo
@@ -105,7 +131,7 @@ function App() {
           />
         )
       }
-      </ul>
+      </table>
     </div>
   )
 }
