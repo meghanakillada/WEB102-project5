@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react'
 import './App.css'
 import CryptoJS from 'crypto-js';
 import CharacterInfo from "./components/CharacterInfo";
+import DataChart from "./components/DataChart";
 
 const API_PUBLIC_KEY = import.meta.env.VITE_APP_API_PUBLIC_KEY;
 const API_PRIVATE_KEY = import.meta.env.VITE_APP_API_PRIVATE_KEY;
@@ -87,6 +88,7 @@ function App() {
           </div>
         </div>
       </div>
+      <DataChart/>
       <input
         type="text"
         placeholder="Search..."
