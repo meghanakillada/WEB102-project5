@@ -39,7 +39,7 @@ GIF created with LiceCap
 
 ## Notes
 
-Describe any challenges encountered while building the app.
+Some challenges I had was learning the documentation for the charts, it was difficult to understand how the components worked, but was able to figure it out in the end.
 
 ## License
 
